@@ -66,5 +66,66 @@
     "quickLinks": "Enlaces Rápidos",
     "contact": "Información de Contacto",
     "rights": "Todos los derechos reservados."
+  },
+  "about": {
+    "title": "Acerca de Wayfera",
+    "subtitle": "Tu socio de confianza en la creación de experiencias de viaje inolvidables alrededor del mundo",
+    "story": {
+      "title": "Nuestra Historia",
+      "p1": "Fundada en 2010, Wayfera comenzó con una misión simple: hacer que las experiencias de viaje de clase mundial sean accesibles para todos. Lo que comenzó como un pequeño equipo de viajeros apasionados ha crecido hasta convertirse en una red global de expertos en viajes.",
+      "p2": "A lo largo de los años, hemos ayudado a miles de viajeros a descubrir destinos increíbles, crear recuerdos duraderos y experimentar culturas de todo el mundo.",
+      "p3": "Hoy, continuamos innovando y expandiendo nuestros servicios, siempre manteniendo los sueños y la satisfacción de nuestros clientes en el corazón de todo lo que hacemos."
+    },
+    "values": {
+      "title": "Nuestros Valores",
+      "excellence": {
+        "title": "Excelencia",
+        "description": "Nos esforzamos por la excelencia en cada viaje que creamos"
+      },
+      "customerFirst": {
+        "title": "Cliente Primero",
+        "description": "Tu satisfacción es nuestra máxima prioridad"
+      },
+      "globalReach": {
+        "title": "Alcance Global",
+        "description": "Conectándote con destinos en todo el mundo"
+      },
+      "passion": {
+        "title": "Pasión",
+        "description": "Amamos lo que hacemos y se nota"
+      }
+    },
+    "stats": {
+      "countries": "Países",
+      "clients": "Clientes Felices",
+      "destinations": "Destinos",
+      "support": "Soporte"
+    }
+  },
+  "contact": {
+    "title": "Ponte en Contacto",
+    "subtitle": "¿Tienes preguntas? Nos encantaría saber de ti. Envíanos un mensaje y te responderemos lo antes posible.",
+    "info": {
+      "title": "Información de Contacto",
+      "description": "Completa el formulario y nuestro equipo se pondrá en contacto contigo en 24 horas.",
+      "email": "Correo Electrónico",
+      "phone": "Teléfono",
+      "address": "Dirección"
+    },
+    "form": {
+      "name": "Nombre Completo",
+      "namePlaceholder": "Juan Pérez",
+      "email": "Dirección de Correo",
+      "emailPlaceholder": "juan@example.com",
+      "phone": "Número de Teléfono",
+      "phonePlaceholder": "+34 612 345 678",
+      "subject": "Asunto",
+      "subjectPlaceholder": "¿Cómo podemos ayudarte?",
+      "message": "Mensaje",
+      "messagePlaceholder": "Cuéntanos más sobre tu consulta...",
+      "submit": "Enviar Mensaje",
+      "sending": "Enviando...",
+      "success": "¡Mensaje enviado con éxito! Te responderemos pronto."
+    }
   }
 }

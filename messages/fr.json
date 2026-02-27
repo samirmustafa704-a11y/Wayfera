@@ -66,5 +66,66 @@
     "quickLinks": "Liens Rapides",
     "contact": "Informations de Contact",
     "rights": "Tous droits réservés."
+  },
+  "about": {
+    "title": "À Propos de Wayfera",
+    "subtitle": "Votre partenaire de confiance dans la création d'expériences de voyage inoubliables à travers le monde",
+    "story": {
+      "title": "Notre Histoire",
+      "p1": "Fondée en 2010, Wayfera a commencé avec une mission simple : rendre les expériences de voyage de classe mondiale accessibles à tous. Ce qui a commencé comme une petite équipe de voyageurs passionnés est devenu un réseau mondial d'experts en voyages.",
+      "p2": "Au fil des ans, nous avons aidé des milliers de voyageurs à découvrir des destinations incroyables, à créer des souvenirs durables et à découvrir des cultures du monde entier.",
+      "p3": "Aujourd'hui, nous continuons d'innover et d'élargir nos services, en gardant toujours les rêves et la satisfaction de nos clients au cœur de tout ce que nous faisons."
+    },
+    "values": {
+      "title": "Nos Valeurs",
+      "excellence": {
+        "title": "Excellence",
+        "description": "Nous visons l'excellence dans chaque voyage que nous créons"
+      },
+      "customerFirst": {
+        "title": "Client d'Abord",
+        "description": "Votre satisfaction est notre priorité absolue"
+      },
+      "globalReach": {
+        "title": "Portée Mondiale",
+        "description": "Vous connecter à des destinations dans le monde entier"
+      },
+      "passion": {
+        "title": "Passion",
+        "description": "Nous aimons ce que nous faisons et cela se voit"
+      }
+    },
+    "stats": {
+      "countries": "Pays",
+      "clients": "Clients Satisfaits",
+      "destinations": "Destinations",
+      "support": "Support"
+    }
+  },
+  "contact": {
+    "title": "Contactez-Nous",
+    "subtitle": "Vous avez des questions ? Nous aimerions avoir de vos nouvelles. Envoyez-nous un message et nous vous répondrons dès que possible.",
+    "info": {
+      "title": "Informations de Contact",
+      "description": "Remplissez le formulaire et notre équipe vous contactera dans les 24 heures.",
+      "email": "E-mail",
+      "phone": "Téléphone",
+      "address": "Adresse"
+    },
+    "form": {
+      "name": "Nom Complet",
+      "namePlaceholder": "Jean Dupont",
+      "email": "Adresse E-mail",
+      "emailPlaceholder": "jean@example.com",
+      "phone": "Numéro de Téléphone",
+      "phonePlaceholder": "+33 6 12 34 56 78",
+      "subject": "Sujet",
+      "subjectPlaceholder": "Comment pouvons-nous vous aider ?",
+      "message": "Message",
+      "messagePlaceholder": "Parlez-nous de votre demande...",
+      "submit": "Envoyer le Message",
+      "sending": "Envoi en cours...",
+      "success": "Message envoyé avec succès ! Nous vous répondrons bientôt."
+    }
   }
 }
