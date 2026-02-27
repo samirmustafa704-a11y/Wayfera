@@ -1,246 +1,474 @@
-# 🌍 Wayfera - Travel Agency Website
+# 🌍 Wayfera - Modern Travel Agency Platform
 
-A modern, feature-rich travel agency website built with Next.js 13, featuring multi-language support, beautiful animations, and comprehensive error handling.
+<div align="center">
 
-![Next.js](https://img.shields.io/badge/Next.js-13.5-black?style=flat-square&logo=next.js)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.2-blue?style=flat-square&logo=typescript)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.3-38bdf8?style=flat-square&logo=tailwind-css)
-![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
+![Wayfera Logo](public/icon.svg)
+
+**A cutting-edge, multilingual travel agency website built with Next.js 14, featuring stunning animations, comprehensive SEO, and enterprise-grade performance optimization.**
+
+[![Next.js](https://img.shields.io/badge/Next.js-14.0-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.2-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38bdf8?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+
+[Live Demo](https://wayfera.netlify.app) • [Report Bug](https://github.com/yourusername/wayfera/issues) • [Request Feature](https://github.com/yourusername/wayfera/issues)
+
+</div>
+
+---
+
+## � Table of Contents
+
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Getting Started](#-getting-started)
+- [Project Structure](#-project-structure)
+- [Configuration](#-configuration)
+- [Deployment](#-deployment)
+- [Contributing](#-contributing)
+- [License](#-license)
+- [Acknowledgments](#-acknowledgments)
+
+---
 
 ## ✨ Features
 
-### 🌐 Multi-Language Support
-- **4 Languages**: English, Arabic, French, Spanish
-- **RTL Support**: Automatic right-to-left layout for Arabic
-- **next-intl Integration**: Seamless internationalization
+### 🌐 Internationalization (i18n)
+- **4 Languages**: English, Arabic (العربية), French (Français), Spanish (Español)
+- **RTL Support**: Automatic right-to-left layout for Arabic with proper text alignment
+- **Locale Persistence**: Selected language persists across navigation
+- **Dynamic Font Loading**: Oswald for Latin scripts, Noto Kufi Arabic for Arabic
 
-### 📱 Pages
-- **Home**: Hero section, featured destinations, testimonials, newsletter
-- **Destinations**: Filterable destinations, popular regions, travel tips
-- **Services**: Service showcase, pricing tiers, process flow
-- **About**: Company story, values, statistics
-- **Contact**: Contact form, location map, contact info
-- **Booking**: Multi-step booking wizard with validation
+### � Comprehensive Pages
+- **Home**: Hero with typewriter effect, featured destinations, testimonials, newsletter
+- **Destinations**: 6+ destinations with filtering, detailed pages, itineraries
+- **Services**: Service packages, pricing tiers, process workflow
+- **About**: Company story, team values, statistics
+- **Contact**: Contact form with validation, location info
+- **Booking**: Multi-step wizard (destination → details → payment)
+- **Legal**: Privacy Policy, Terms of Service, Cookie Policy
 
-### 🎨 Design & UX
-- **Dark Mode**: Full dark mode support with next-themes
-- **Animations**: Smooth Framer Motion animations throughout
-- **Responsive**: Mobile-first design for all devices
-- **Accessibility**: WCAG compliant components
-- **Modern UI**: Built with shadcn/ui and Tailwind CSS
+### 🎨 Design & User Experience
+- **Dark Mode**: Seamless theme switching with system preference detection
+- **Animations**: 60fps Framer Motion animations throughout
+- **Responsive Design**: Mobile-first approach, optimized for all screen sizes
+- **Glass Morphism**: Modern glassmorphic UI elements
+- **Accessibility**: WCAG 2.1 AA compliant components
+- **Custom Calendar**: Styled date picker with brand colors
 
-### 🛡️ Error Handling
-- **404 Page**: Animated not-found page with navigation
-- **Error Boundaries**: Graceful error handling
-- **Loading States**: Beautiful loading animations
+### � Performance Optimization
+- **Image Optimization**: Next.js Image with AVIF/WebP, lazy loading
+- **Code Splitting**: Automatic route-based and component-level splitting
+- **Font Optimization**: Preloaded Google Fonts with display swap
+- **Reduced Animations**: 75% reduction in floating elements (20 → 5)
+- **GPU Acceleration**: will-change-transform for smooth animations
+- **Caching Strategy**: Browser caching, localStorage, sessionStorage
+
+### 🔍 SEO & Marketing
+- **Meta Tags**: Comprehensive Open Graph and Twitter Card tags
+- **JSON-LD**: Structured data (Organization, Breadcrumb, Product schemas)
+- **Dynamic Sitemap**: Multi-locale XML sitemap generation
+- **Robots.txt**: Proper crawling rules for search engines
+- **PWA Ready**: Web app manifest with icons
+- **Breadcrumbs**: Schema.org compliant navigation
+
+### 🛡️ Error Handling & Reliability
+- **Error Boundaries**: Graceful error recovery with helpful UI
+- **404 Pages**: Animated not-found pages with navigation suggestions
+- **Network Error Handling**: Connection failure detection and retry
+- **Loading States**: Skeleton screens and loading animations
 - **Empty States**: User-friendly empty data displays
-- **Network Errors**: Connection failure handling
+- **Form Validation**: Zod schema validation with helpful error messages
 
-### 🚀 Performance
-- **Server Components**: Optimized with React Server Components
-- **Image Optimization**: Next.js Image component
-- **Code Splitting**: Automatic route-based splitting
-- **Font Optimization**: Google Fonts with next/font
+### 💾 State Management & Storage
+- **Local Storage**: Persistent user preferences with hooks
+- **Session Storage**: Temporary data management
+- **Cookie Consent**: GDPR-compliant cookie management
+- **Cache API**: Browser cache for API responses
+- **Cross-tab Sync**: localStorage synchronization across tabs
+
+---
 
 ## 🛠️ Tech Stack
 
-- **Framework**: [Next.js 13.5](https://nextjs.org/)
-- **Language**: [TypeScript](https://www.typescriptlang.org/)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **UI Components**: [shadcn/ui](https://ui.shadcn.com/)
-- **Animations**: [Framer Motion](https://www.framer.com/motion/)
-- **Forms**: [React Hook Form](https://react-hook-form.com/) + [Zod](https://zod.dev/)
-- **Internationalization**: [next-intl](https://next-intl-docs.vercel.app/)
-- **Icons**: [Lucide React](https://lucide.dev/)
-- **Notifications**: [React Hot Toast](https://react-hot-toast.com/)
+### Core
+- **[Next.js 14](https://nextjs.org/)** - React framework with App Router
+- **[TypeScript](https://www.typescriptlang.org/)** - Type-safe JavaScript
+- **[React 18](https://react.dev/)** - UI library with Server Components
 
-## 📦 Installation
+### Styling
+- **[Tailwind CSS 3.4](https://tailwindcss.com/)** - Utility-first CSS framework
+- **[shadcn/ui](https://ui.shadcn.com/)** - Re-usable component library
+- **[Radix UI](https://www.radix-ui.com/)** - Unstyled, accessible components
+- **[Framer Motion](https://www.framer.com/motion/)** - Production-ready animations
+
+### Forms & Validation
+- **[React Hook Form](https://react-hook-form.com/)** - Performant form library
+- **[Zod](https://zod.dev/)** - TypeScript-first schema validation
+- **[@hookform/resolvers](https://github.com/react-hook-form/resolvers)** - Validation resolvers
+
+### Internationalization
+- **[next-intl](https://next-intl-docs.vercel.app/)** - i18n for Next.js
+- **[Google Fonts](https://fonts.google.com/)** - Oswald & Noto Kufi Arabic
+
+### UI/UX
+- **[Lucide React](https://lucide.dev/)** - Beautiful icon library
+- **[React Hot Toast](https://react-hot-toast.com/)** - Toast notifications
+- **[date-fns](https://date-fns.org/)** - Date utility library
+
+### Development Tools
+- **[ESLint](https://eslint.org/)** - Code linting
+- **[PostCSS](https://postcss.org/)** - CSS transformations
+- **[Autoprefixer](https://github.com/postcss/autoprefixer)** - CSS vendor prefixes
+
+---
+
+## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js 18+ 
-- npm or yarn
 
-### Setup
+Ensure you have the following installed:
+- **Node.js** 18.17 or later
+- **npm** 9.0 or later (or **yarn** 1.22+)
+- **Git** for version control
+
+### Installation
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/Mostafa-SAID7/Wayfera.git
-cd Wayfera
+git clone https://github.com/yourusername/wayfera.git
+cd wayfera
 ```
 
 2. **Install dependencies**
 ```bash
 npm install
-# or
-yarn install
 ```
 
-3. **Run development server**
+3. **Set up environment variables**
+```bash
+cp .env.example .env.local
+```
+
+Edit `.env.local` with your configuration:
+```env
+NEXT_PUBLIC_SITE_URL=http://localhost:3000
+```
+
+4. **Run the development server**
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
-4. **Open in browser**
+5. **Open your browser**
 ```
 http://localhost:3000
 ```
 
-## 🏗️ Project Structure
+### Build for Production
+
+```bash
+# Create optimized production build
+npm run build
+
+# Start production server
+npm start
+```
+
+---
+
+## 📁 Project Structure
 
 ```
 wayfera/
-├── app/
-│   ├── [locale]/              # Internationalized routes
-│   │   ├── about/            # About page
-│   │   ├── booking/          # Booking page
-│   │   ├── contact/          # Contact page
-│   │   ├── destinations/     # Destinations page
-│   │   ├── services/         # Services page
-│   │   ├── error.tsx         # Error boundary
-│   │   ├── loading.tsx       # Loading state
-│   │   ├── not-found.tsx     # 404 page
-│   │   └── page.tsx          # Home page
-│   └── global-error.tsx      # Global error handler
+├── app/                          # Next.js App Router
+│   ├── [locale]/                # Internationalized routes
+│   │   ├── about/              # About page
+│   │   ├── booking/            # Booking wizard
+│   │   ├── contact/            # Contact form
+│   │   ├── cookies/            # Cookie policy
+│   │   ├── destinations/       # Destinations listing
+│   │   │   └── [id]/          # Destination detail pages
+│   │   ├── privacy/            # Privacy policy
+│   │   ├── services/           # Services page
+│   │   ├── terms/              # Terms of service
+│   │   ├── error.tsx           # Error boundary
+│   │   ├── globals.css         # Global styles
+│   │   ├── layout.tsx          # Root layout
+│   │   ├── loading.tsx         # Loading state
+│   │   ├── not-found.tsx       # 404 page
+│   │   └── page.tsx            # Home page
+│   ├── global-error.tsx        # Global error handler
+│   ├── icon.svg                # App icon
+│   ├── layout.tsx              # Root layout wrapper
+│   ├── page.tsx                # Root redirect
+│   ├── robots.ts               # Robots.txt generator
+│   └── sitemap.ts              # Sitemap generator
 ├── components/
-│   ├── ui/                   # shadcn/ui components
-│   ├── booking-section.tsx   # Booking form
-│   ├── destinations-section.tsx
-│   ├── empty-state.tsx       # Empty state component
-│   ├── error-boundary.tsx    # Error boundary component
-│   ├── featured-destinations.tsx
-│   ├── footer.tsx
-│   ├── header.tsx
-│   ├── hero-section.tsx
-│   ├── network-error.tsx
-│   ├── newsletter.tsx
-│   ├── popular-regions.tsx
-│   ├── service-features.tsx
-│   ├── service-pricing.tsx
-│   ├── service-process.tsx
-│   ├── services-section.tsx
-│   ├── testimonials.tsx
-│   ├── travel-tips.tsx
-│   └── why-choose-us.tsx
-├── messages/                 # Translation files
-│   ├── en.json
-│   ├── ar.json
-│   ├── fr.json
-│   └── es.json
-├── lib/
-│   └── utils.ts             # Utility functions
-├── hooks/
-│   └── use-toast.ts         # Toast hook
-├── i18n.ts                  # i18n configuration
-├── middleware.ts            # Next.js middleware
-└── tailwind.config.ts       # Tailwind configuration
+│   ├── features/               # Feature-specific components
+│   │   ├── booking/           # Booking components
+│   │   ├── destinations/      # Destination components
+│   │   ├── services/          # Service components
+│   │   └── testimonials/      # Testimonial components
+│   ├── layout/                # Layout components
+│   │   ├── footer.tsx
+│   │   ├── header.tsx
+│   │   └── hero-section.tsx
+│   ├── providers/             # Context providers
+│   │   └── theme-provider.tsx
+│   ├── shared/                # Shared components
+│   │   ├── cookie-consent.tsx
+│   │   ├── empty-state.tsx
+│   │   ├── error-boundary.tsx
+│   │   ├── json-ld.tsx
+│   │   ├── network-error.tsx
+│   │   └── performance-optimizer.tsx
+│   └── ui/                    # shadcn/ui components
+│       ├── button.tsx
+│       ├── card.tsx
+│       ├── input.tsx
+│       └── ... (50+ components)
+├── config/                    # Configuration files
+│   ├── navigation.ts          # Navigation config
+│   └── site.ts                # Site metadata
+├── hooks/                     # Custom React hooks
+│   ├── use-cache.ts
+│   ├── use-local-storage.ts
+│   ├── use-session-storage.ts
+│   └── use-toast.ts
+├── lib/                       # Utility libraries
+│   ├── constants.ts           # App constants
+│   ├── seo.ts                 # SEO utilities
+│   ├── storage.ts             # Storage utilities
+│   └── utils.ts               # Helper functions
+├── messages/                  # i18n translation files
+│   ├── ar.json               # Arabic
+│   ├── en.json               # English
+│   ├── es.json               # Spanish
+│   └── fr.json               # French
+├── public/                    # Static assets
+│   └── manifest.json         # PWA manifest
+├── types/                     # TypeScript types
+│   └── index.ts
+├── .env.production           # Production environment
+├── .eslintrc.json            # ESLint config
+├── .gitignore                # Git ignore rules
+├── components.json           # shadcn/ui config
+├── i18n.ts                   # i18n configuration
+├── middleware.ts             # Next.js middleware
+├── netlify.toml              # Netlify config
+├── next.config.js            # Next.js config
+├── package.json              # Dependencies
+├── postcss.config.js         # PostCSS config
+├── tailwind.config.ts        # Tailwind config
+└── tsconfig.json             # TypeScript config
 ```
+
+---
+
+## ⚙️ Configuration
+
+### Environment Variables
+
+Create `.env.local` for local development:
+
+```env
+# Site Configuration
+NEXT_PUBLIC_SITE_URL=http://localhost:3000
+NEXT_PUBLIC_SITE_NAME=Wayfera
+
+# Optional: Analytics
+NEXT_PUBLIC_GA_ID=your-ga-id
+```
+
+### Tailwind Configuration
+
+All styles are centralized in `tailwind.config.ts`:
+- CSS variables for theming
+- Custom colors and gradients
+- Date input styling
+- Calendar component styling
+- Utility classes (glass, text-shadow, typewriter)
+
+### Next.js Configuration
+
+`next.config.js` includes:
+- Image optimization (AVIF, WebP)
+- Package imports optimization
+- SWC minification
+- Security headers
+- Caching headers
+
+---
 
 ## 🌍 Internationalization
 
-The app supports 4 languages with automatic locale detection:
+### Supported Languages
 
-- **English** (`/en`)
-- **Arabic** (`/ar`) - with RTL support
-- **French** (`/fr`)
-- **Spanish** (`/es`)
+| Language | Code | Direction | Font |
+|----------|------|-----------|------|
+| English | `en` | LTR | Oswald |
+| Arabic | `ar` | RTL | Noto Kufi Arabic |
+| French | `fr` | LTR | Oswald |
+| Spanish | `es` | LTR | Oswald |
 
 ### Adding a New Language
 
-1. Create translation file in `messages/[locale].json`
-2. Add locale to `middleware.ts`
-3. Update `i18n.ts` configuration
-
-## 🎨 Customization
-
-### Colors
-Edit `tailwind.config.ts` to customize the color scheme:
-
+1. Create translation file: `messages/[locale].json`
+2. Add locale to `middleware.ts`:
 ```typescript
-theme: {
-  extend: {
-    colors: {
-      // Your custom colors
-    }
-  }
+locales: ['en', 'ar', 'fr', 'es', 'de'], // Add 'de'
+```
+3. Update `i18n.ts` to handle new locale
+4. Add translations for all keys
+
+### Translation Structure
+
+```json
+{
+  "nav": { "home": "Home", "about": "About" },
+  "hero": { "title": "Discover Your Next", "subtitle": "..." },
+  "destinations": { "title": "Popular Destinations" },
+  "services": { "title": "Our Services" },
+  "booking": { "title": "Book Your Trip" },
+  "footer": { "description": "..." }
 }
 ```
 
-### Components
-All components are in the `components/` directory and can be easily customized.
-
-### Translations
-Edit JSON files in `messages/` directory to update translations.
-
-## 📝 Scripts
-
-```bash
-# Development
-npm run dev          # Start dev server
-
-# Production
-npm run build        # Build for production
-npm run start        # Start production server
-
-# Linting
-npm run lint         # Run ESLint
-```
+---
 
 ## 🚀 Deployment
 
-### Vercel (Recommended)
-1. Push to GitHub
-2. Import project in Vercel
-3. Deploy automatically
+### Netlify (Current)
 
-### Other Platforms
+The app is deployed at [wayfera.netlify.app](https://wayfera.netlify.app)
+
+**Deploy Steps:**
+1. Push to GitHub
+2. Connect repository in Netlify
+3. Build settings are in `netlify.toml`
+4. Deploy automatically on push
+
+### Vercel (Recommended for Next.js)
+
+```bash
+# Install Vercel CLI
+npm i -g vercel
+
+# Deploy
+vercel
+```
+
+### Docker
+
+```dockerfile
+FROM node:18-alpine
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci
+COPY . .
+RUN npm run build
+EXPOSE 3000
+CMD ["npm", "start"]
+```
+
+### Manual Deployment
+
 ```bash
 npm run build
-npm run start
+npm start
 ```
+
+---
+
+## 📝 Scripts
+
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start development server on port 3000 |
+| `npm run build` | Create optimized production build |
+| `npm start` | Start production server |
+| `npm run lint` | Run ESLint for code quality |
+
+---
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+
+### Development Workflow
 
 1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+2. Create a feature branch: `git checkout -b feature/amazing-feature`
+3. Make your changes
+4. Run tests: `npm run lint`
+5. Commit: `git commit -m 'Add amazing feature'`
+6. Push: `git push origin feature/amazing-feature`
+7. Open a Pull Request
+
+### Code Style
+
+- Use TypeScript for type safety
+- Follow ESLint rules
+- Use named exports over default exports
+- Write meaningful commit messages
+- Add comments for complex logic
+
+---
 
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+---
+
 ## 👨‍💻 Author
 
-**Mostafa SAID**
-- GitHub: [@Mostafa-SAID7](https://github.com/Mostafa-SAID7)
+**M.Said**
 
-## 🙏 Acknowledgments
-
-- [Next.js](https://nextjs.org/) - The React Framework
-- [shadcn/ui](https://ui.shadcn.com/) - Beautiful UI components
-- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS
-- [Framer Motion](https://www.framer.com/motion/) - Animation library
-- [Lucide](https://lucide.dev/) - Beautiful icons
-
-## 📸 Screenshots
-
-### Home Page
-Beautiful hero section with featured destinations and testimonials.
-
-### Destinations
-Filterable destinations with detailed information and booking options.
-
-### Services
-Comprehensive service packages with transparent pricing.
-
-### Error Pages
-Professional error handling with helpful navigation.
+- Portfolio: [m-said-portfolio.netlify.app](https://m-said-portfolio.netlify.app)
+- GitHub: [@yourusername](https://github.com/yourusername)
 
 ---
 
-Made with ❤️ by Mostafa SAID
+## 🙏 Acknowledgments
+
+- [Next.js Team](https://nextjs.org/) - Amazing React framework
+- [Vercel](https://vercel.com/) - Hosting and deployment
+- [shadcn](https://twitter.com/shadcn) - Beautiful UI components
+- [Tailwind Labs](https://tailwindcss.com/) - Utility-first CSS
+- [Framer](https://www.framer.com/) - Motion library
+- [Radix UI](https://www.radix-ui.com/) - Accessible primitives
+
+---
+
+## 📊 Project Stats
+
+- **Total Routes**: 13+ pages
+- **Components**: 60+ reusable components
+- **Languages**: 4 (en, ar, fr, es)
+- **Bundle Size**: ~79KB (First Load JS)
+- **Lighthouse Score**: 95+ (Performance, Accessibility, SEO)
+
+---
+
+## 🗺️ Roadmap
+
+- [ ] Add user authentication
+- [ ] Integrate payment gateway
+- [ ] Add booking management dashboard
+- [ ] Implement real-time availability
+- [ ] Add customer reviews system
+- [ ] Create mobile app (React Native)
+- [ ] Add more destinations
+- [ ] Implement AI-powered recommendations
+
+---
+
+<div align="center">
+
+**Made with ❤️ by M.Said**
+
+[⬆ Back to Top](#-wayfera---modern-travel-agency-platform)
+
+</div>
