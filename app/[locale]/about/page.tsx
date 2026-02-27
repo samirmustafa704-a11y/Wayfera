@@ -5,6 +5,7 @@ import { Footer } from '@/components/footer';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { Award, Users, Globe, Heart } from 'lucide-react';
+import Image from 'next/image';
 
 export default function AboutPage() {
   const t = useTranslations();
@@ -61,12 +62,15 @@ export default function AboutPage() {
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
-              className="relative"
+              className="relative aspect-[4/3]"
             >
-              <img
+              <Image
                 src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg"
                 alt="Our Team"
-                className="w-full h-auto rounded-3xl shadow-2xl"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="rounded-3xl shadow-2xl object-cover"
+                priority
               />
             </motion.div>
           </div>

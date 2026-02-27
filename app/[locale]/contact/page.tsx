@@ -12,6 +12,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent } from '@/components/ui/card';
 import { useState } from 'react';
 import toast from 'react-hot-toast';
+import Image from 'next/image';
 
 export default function ContactPage() {
   const t = useTranslations();
@@ -104,12 +105,14 @@ export default function ContactPage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
-                className="rounded-2xl overflow-hidden shadow-lg h-64"
+                className="rounded-2xl overflow-hidden shadow-lg h-64 relative"
               >
-                <img
+                <Image
                   src="https://images.pexels.com/photos/1252500/pexels-photo-1252500.jpeg"
                   alt="Office Location"
-                  className="w-full h-full object-cover"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </motion.div>
             </motion.div>
