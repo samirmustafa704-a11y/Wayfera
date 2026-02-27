@@ -1,6 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Oswald } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { ThemeProvider } from '@/components/providers';
@@ -8,10 +8,12 @@ import { Toaster } from 'react-hot-toast';
 import { PerformanceOptimizer, JsonLd } from '@/components/shared';
 import { generateOrganizationSchema } from '@/lib/seo';
 
-const inter = Inter({ 
+const oswald = Oswald({ 
   subsets: ['latin'],
+  weight: ['200', '300', '400', '500', '600', '700'],
   display: 'swap',
   preload: true,
+  variable: '--font-oswald',
 });
 
 export const metadata: Metadata = {
@@ -89,7 +91,7 @@ export default async function RootLayout({
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#2563eb" />
       </head>
-      <body className={inter.className} suppressHydrationWarning>
+      <body className={oswald.className} suppressHydrationWarning>
         <PerformanceOptimizer />
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider
