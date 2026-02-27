@@ -44,7 +44,7 @@ const regions = [
   }
 ];
 
-export default function PopularRegions() {
+export function PopularRegions() {
   return (
     <section className="py-20 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -106,3 +106,4 @@ export default function PopularRegions() {
     </section>
   );
 }
+

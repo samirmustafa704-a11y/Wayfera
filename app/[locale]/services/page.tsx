@@ -1,11 +1,7 @@
-import { Header } from '@/components/header';
-import { ServicesSection } from '@/components/services-section';
-import { Footer } from '@/components/footer';
-import ServiceFeatures from '@/components/service-features';
-import ServiceProcess from '@/components/service-process';
-import ServicePricing from '@/components/service-pricing';
+import { Header, Footer } from '@/components/layout';
+import { ServicesSection, ServiceFeatures, ServiceProcess, ServicePricing } from '@/components/features/services';
 import { generateSEO, generateBreadcrumbSchema } from '@/lib/seo';
-import { JsonLd } from '@/components/json-ld';
+import { JsonLd } from '@/components/shared';
 import { Metadata } from 'next';
 
 export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {

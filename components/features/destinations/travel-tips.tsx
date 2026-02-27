@@ -26,7 +26,7 @@ const tips = [
   }
 ];
 
-export default function TravelTips() {
+export function TravelTips() {
   return (
     <section className="py-20 bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-800 dark:via-gray-900 dark:to-gray-800">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -74,3 +74,4 @@ export default function TravelTips() {
     </section>
   );
 }
+

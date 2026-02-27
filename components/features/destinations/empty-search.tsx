@@ -1,14 +1,14 @@
 "use client";
 
 import { Search } from 'lucide-react';
-import EmptyState from './empty-state';
+import { EmptyState } from '@/components/shared';
 
 interface EmptySearchProps {
   searchQuery: string;
   onClear: () => void;
 }
 
-export default function EmptySearch({ searchQuery, onClear }: EmptySearchProps) {
+export function EmptySearch({ searchQuery, onClear }: EmptySearchProps) {
   return (
     <EmptyState
       icon={Search}
@@ -21,3 +21,4 @@ export default function EmptySearch({ searchQuery, onClear }: EmptySearchProps) 
     />
   );
 }
+

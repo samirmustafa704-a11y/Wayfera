@@ -3,10 +3,9 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
-import { ThemeProvider } from '@/components/theme-provider';
+import { ThemeProvider } from '@/components/providers';
 import { Toaster } from 'react-hot-toast';
-import { PerformanceOptimizer } from '@/components/performance-optimizer';
-import { JsonLd } from '@/components/json-ld';
+import { PerformanceOptimizer, JsonLd } from '@/components/shared';
 import { generateOrganizationSchema } from '@/lib/seo';
 
 const inter = Inter({ 

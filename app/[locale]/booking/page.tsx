@@ -1,6 +1,5 @@
-import { Header } from '@/components/header';
-import { BookingSection } from '@/components/booking-section';
-import { Footer } from '@/components/footer';
+import { Header, Footer } from '@/components/layout';
+import { BookingSection } from '@/components/features/booking';
 
 export default function BookingPage() {
   return (

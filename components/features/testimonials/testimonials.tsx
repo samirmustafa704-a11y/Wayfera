@@ -41,7 +41,7 @@ const testimonials = [
   }
 ];
 
-export default function Testimonials() {
+export function Testimonials() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
@@ -111,3 +111,4 @@ export default function Testimonials() {
     </section>
   );
 }
+

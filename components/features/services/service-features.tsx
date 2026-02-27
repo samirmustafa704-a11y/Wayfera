@@ -18,7 +18,7 @@ const features = [
   'Loyalty rewards program'
 ];
 
-export default function ServiceFeatures() {
+export function ServiceFeatures() {
   return (
     <section className="py-20 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -60,3 +60,4 @@ export default function ServiceFeatures() {
     </section>
   );
 }
+

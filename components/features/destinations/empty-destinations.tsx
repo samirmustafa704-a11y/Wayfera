@@ -1,11 +1,11 @@
 "use client";
 
 import { MapPin } from 'lucide-react';
-import EmptyState from './empty-state';
+import { EmptyState } from '@/components/shared';
 import { useRouter } from 'next/navigation';
 import { useLocale } from 'next-intl';
 
-export default function EmptyDestinations() {
+export function EmptyDestinations() {
   const router = useRouter();
   const locale = useLocale();
 
@@ -21,3 +21,4 @@ export default function EmptyDestinations() {
     />
   );
 }
+

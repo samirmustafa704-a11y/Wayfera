@@ -43,7 +43,7 @@ const featured = [
   }
 ];
 
-export default function FeaturedDestinations() {
+export function FeaturedDestinations() {
   const locale = useLocale();
 
   return (

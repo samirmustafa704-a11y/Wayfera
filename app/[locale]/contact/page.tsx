@@ -1,7 +1,6 @@
 "use client";
 
-import { Header } from '@/components/header';
-import { Footer } from '@/components/footer';
+import { Header, Footer } from '@/components/layout';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';

@@ -7,7 +7,7 @@ import { Input } from '@/components/ui/input';
 import { useState } from 'react';
 import toast from 'react-hot-toast';
 
-export default function Newsletter() {
+export function Newsletter() {
   const [email, setEmail] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -73,3 +73,4 @@ export default function Newsletter() {
     </section>
   );
 }
+

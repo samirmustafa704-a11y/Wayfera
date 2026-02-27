@@ -54,7 +54,7 @@ const plans = [
   }
 ];
 
-export default function ServicePricing() {
+export function ServicePricing() {
   const locale = useLocale();
 
   return (
@@ -143,3 +143,4 @@ export default function ServicePricing() {
     </section>
   );
 }
+

@@ -9,7 +9,7 @@ interface NetworkErrorProps {
   message?: string;
 }
 
-export default function NetworkError({ 
+export function NetworkError({ 
   onRetry, 
   message = "Unable to connect to the server. Please check your internet connection." 
 }: NetworkErrorProps) {

@@ -1,11 +1,7 @@
-import { Header } from '@/components/header';
-import { DestinationsSection } from '@/components/destinations-section';
-import { Footer } from '@/components/footer';
-import DestinationHero from '@/components/destination-hero';
-import PopularRegions from '@/components/popular-regions';
-import TravelTips from '@/components/travel-tips';
+import { Header, Footer } from '@/components/layout';
+import { DestinationsSection, DestinationHero, PopularRegions, TravelTips } from '@/components/features/destinations';
 import { generateSEO, generateBreadcrumbSchema } from '@/lib/seo';
-import { JsonLd } from '@/components/json-ld';
+import { JsonLd } from '@/components/shared';
 import { Metadata } from 'next';
 
 export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
