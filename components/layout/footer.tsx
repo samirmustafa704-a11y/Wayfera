@@ -131,7 +131,15 @@ export function Footer() {
           className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center"
         >
           <p className="text-gray-400 text-center md:text-left">
-            © 2024 Wayfera. {t('footer.rights')}
+            © 2024 - {new Date().getFullYear()} Wayfera. {t('footer.rights')} Developed by{' '}
+            <a 
+              href="https://m-said-portfolio.netlify.app" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:text-blue-300 transition-colors duration-200 font-semibold"
+            >
+              M.Said
+            </a>
           </p>
           
           <div className="flex space-x-6 mt-4 md:mt-0">
