@@ -11,7 +11,7 @@ const featured = [
   {
     id: 1,
     name: 'Santorini, Greece',
-    image: 'https://images.pexels.com/photos/161815/santorini-oia-greece-161815.jpeg',
+    image: 'https://images.pexels.com/photos/161815/santorini-oia-greece-161815.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     price: 1299,
     rating: 4.9,
     reviews: 234,
