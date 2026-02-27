@@ -81,20 +81,36 @@ export function Header() {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8 rtl:space-x-reverse">
-            {navItems.map((item) => (
-              <Link
-                key={item.key}
-                href={`/${locale}${item.href}`}
-              >
-                <motion.span
-                  whileHover={{ y: -2 }}
-                  className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 
-                           font-medium transition-colors duration-200 cursor-pointer"
+            {navItems.map((item) => {
+              const isActive = pathname === `/${locale}${item.href}` || 
+                              (item.href === '/' && pathname === `/${locale}`);
+              
+              return (
+                <Link
+                  key={item.key}
+                  href={`/${locale}${item.href}`}
                 >
-                  {t(`nav.${item.key}`)}
-                </motion.span>
-              </Link>
-            ))}
+                  <motion.span
+                    whileHover={{ y: -2 }}
+                    className={`font-medium transition-colors duration-200 cursor-pointer relative ${
+                      isActive
+                        ? 'text-blue-600 dark:text-blue-400'
+                        : 'text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400'
+                    }`}
+                  >
+                    {t(`nav.${item.key}`)}
+                    {isActive && (
+                      <motion.div
+                        layoutId="activeTab"
+                        className="absolute -bottom-1 left-0 right-0 h-0.5 bg-blue-600 dark:bg-blue-400"
+                        initial={false}
+                        transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                      />
+                    )}
+                  </motion.span>
+                </Link>
+              );
+            })}
           </div>
 
           {/* Controls */}
@@ -201,24 +217,31 @@ export function Header() {
               className="lg:hidden overflow-hidden"
             >
               <div className="py-4 space-y-2 bg-white/95 dark:bg-gray-900/95 backdrop-blur-lg rounded-lg shadow-lg border border-gray-200 dark:border-gray-800 mt-2">
-                {navItems.map((item, index) => (
-                  <Link
-                    key={item.key}
-                    href={`/${locale}${item.href}`}
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    <motion.div
-                      initial={{ x: -20, opacity: 0 }}
-                      animate={{ x: 0, opacity: 1 }}
-                      transition={{ delay: index * 0.1 }}
-                      className="block px-4 py-3 mx-2 text-gray-700 dark:text-gray-300 hover:bg-blue-50 
-                               dark:hover:bg-blue-950 hover:text-blue-600 dark:hover:text-blue-400
-                               rounded-lg cursor-pointer font-medium transition-all duration-200"
+                {navItems.map((item, index) => {
+                  const isActive = pathname === `/${locale}${item.href}` || 
+                                  (item.href === '/' && pathname === `/${locale}`);
+                  
+                  return (
+                    <Link
+                      key={item.key}
+                      href={`/${locale}${item.href}`}
+                      onClick={() => setIsMenuOpen(false)}
                     >
-                      {t(`nav.${item.key}`)}
-                    </motion.div>
-                  </Link>
-                ))}
+                      <motion.div
+                        initial={{ x: -20, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{ delay: index * 0.1 }}
+                        className={`block px-4 py-3 mx-2 rounded-lg cursor-pointer font-medium transition-all duration-200 ${
+                          isActive
+                            ? 'bg-blue-600 text-white'
+                            : 'text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-blue-950 hover:text-blue-600 dark:hover:text-blue-400'
+                        }`}
+                      >
+                        {t(`nav.${item.key}`)}
+                      </motion.div>
+                    </Link>
+                  );
+                })}
               </div>
             </motion.div>
           )}
