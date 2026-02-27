@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { MapPin, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import Image from 'next/image';
 
 const regions = [
   {
@@ -72,10 +73,13 @@ export default function PopularRegions() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="group relative h-80 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer"
             >
-              <img
+              <Image
                 src={region.image}
                 alt={region.name}
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                className="object-cover group-hover:scale-110 transition-transform duration-500"
+                loading="lazy"
               />
               
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />

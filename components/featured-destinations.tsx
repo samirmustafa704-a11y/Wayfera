@@ -5,12 +5,13 @@ import { MapPin, Star, ArrowRight, Clock, Users } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { useLocale } from 'next-intl';
+import Image from 'next/image';
 
 const featured = [
   {
     id: 1,
     name: 'Santorini, Greece',
-    image: 'https://images.pexels.com/photos/161815/santorini-oia-greece-travel-161815.jpeg',
+    image: 'https://images.pexels.com/photos/161815/santorini-oia-greece-161815.jpeg',
     price: 1299,
     rating: 4.9,
     reviews: 234,
@@ -74,10 +75,13 @@ export default function FeaturedDestinations() {
               className="group bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
             >
               <div className="relative h-64 overflow-hidden">
-                <img
+                <Image
                   src={destination.image}
                   alt={destination.name}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  loading="lazy"
                 />
                 <div className="absolute top-4 right-4 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm px-3 py-1 rounded-full flex items-center">
                   <Star className="w-4 h-4 text-yellow-500 fill-yellow-500 mr-1" />

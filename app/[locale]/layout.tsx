@@ -5,8 +5,13 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { ThemeProvider } from '@/components/theme-provider';
 import { Toaster } from 'react-hot-toast';
+import { PerformanceOptimizer } from '@/components/performance-optimizer';
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ 
+  subsets: ['latin'],
+  display: 'swap',
+  preload: true,
+});
 
 export const metadata: Metadata = {
   title: 'Wayfera - Discover Amazing Destinations',
@@ -26,6 +31,7 @@ export default async function RootLayout({
   return (
     <html lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'} suppressHydrationWarning>
       <body className={inter.className} suppressHydrationWarning>
+        <PerformanceOptimizer />
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider
             attribute="class"

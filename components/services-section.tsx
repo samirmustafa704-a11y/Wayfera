@@ -22,6 +22,7 @@ import {
   Star,
   Quote
 } from 'lucide-react';
+import Image from 'next/image';
 
 const services = [
   {
@@ -207,11 +208,16 @@ export function ServicesSection() {
                 </div>
 
                 <div className="flex items-center justify-center">
-                  <img
-                    src={testimonials[currentTestimonial].image}
-                    alt={testimonials[currentTestimonial].name}
-                    className="w-16 h-16 rounded-full object-cover mr-4"
-                  />
+                  <div className="relative w-16 h-16 mr-4">
+                    <Image
+                      src={testimonials[currentTestimonial].image}
+                      alt={testimonials[currentTestimonial].name}
+                      fill
+                      sizes="64px"
+                      className="rounded-full object-cover"
+                      loading="lazy"
+                    />
+                  </div>
                   <div className="text-left">
                     <h4 className="font-semibold text-gray-900 dark:text-white">
                       {testimonials[currentTestimonial].name}

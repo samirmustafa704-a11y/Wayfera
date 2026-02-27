@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { Star, Quote } from 'lucide-react';
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
+import Image from 'next/image';
 
 const testimonials = [
   {
@@ -84,11 +85,16 @@ export default function Testimonials() {
               </p>
 
               <div className="flex items-center">
-                <img
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  className="w-12 h-12 rounded-full object-cover mr-3"
-                />
+                <div className="relative w-12 h-12 mr-3">
+                  <Image
+                    src={testimonial.image}
+                    alt={testimonial.name}
+                    fill
+                    sizes="48px"
+                    className="rounded-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
                 <div>
                   <h4 className="font-bold text-gray-900 dark:text-white text-sm">
                     {testimonial.name}

@@ -5,13 +5,14 @@ import { useTranslations } from 'next-intl';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { MapPin, Star, Heart, ArrowRight } from 'lucide-react';
+import Image from 'next/image';
 
 const destinations = [
   {
     id: 1,
     name: 'Santorini, Greece',
     category: 'beach',
-    image: 'https://images.pexels.com/photos/161815/santorini-oia-greece-travel-161815.jpeg',
+    image: 'https://images.pexels.com/photos/161815/santorini-oia-greece-161815.jpeg',
     price: 1299,
     rating: 4.9,
     description: 'Stunning sunsets and white-washed buildings',
@@ -147,10 +148,13 @@ export function DestinationsSection() {
               >
                 {/* Image */}
                 <div className="relative h-64 overflow-hidden">
-                  <img
+                  <Image
                     src={destination.image}
                     alt={destination.name}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    loading="lazy"
                   />
                   
                   {/* Favorite Button */}

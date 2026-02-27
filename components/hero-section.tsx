@@ -1,31 +1,17 @@
 "use client";
 
 import { useState, useEffect } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Play } from 'lucide-react';
-import dynamic from 'next/dynamic';
-
-// Dynamically import Lottie to avoid SSR issues
-const Lottie = dynamic(() => import('lottie-react'), { ssr: false });
-
-// Mock Lottie animation data (in real app, load from public/animations/)
-const mockLottieData = {
-  v: "5.7.4",
-  fr: 25,
-  ip: 0,
-  op: 75,
-  w: 500,
-  h: 500,
-  nm: "Travel Animation",
-  ddd: 0,
-  assets: [],
-  layers: []
-};
+import { useRouter } from 'next/navigation';
+import Image from 'next/image';
 
 export function HeroSection() {
   const t = useTranslations('hero');
+  const locale = useLocale();
+  const router = useRouter();
   const [typewriterText, setTypewriterText] = useState('');
   const [showCursor, setShowCursor] = useState(true);
   const [mounted, setMounted] = useState(false);
@@ -60,11 +46,11 @@ export function HeroSection() {
   }, [fullText]);
 
   const scrollToDestinations = () => {
-    window.location.href = `/${window.location.pathname.split('/')[1]}/destinations`;
+    router.push(`/${locale}/destinations`);
   };
 
   const scrollToBooking = () => {
-    window.location.href = `/${window.location.pathname.split('/')[1]}/booking`;
+    router.push(`/${locale}/booking`);
   };
 
   return (
@@ -75,29 +61,47 @@ export function HeroSection() {
       {/* Background Elements */}
       <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/1559825/pexels-photo-1559825.jpeg')] bg-cover bg-center opacity-10"></div>
       
-      {/* Floating Elements */}
+      {/* Floating Elements - Optimized */}
       {mounted && (
-        <div className="absolute inset-0 overflow-hidden">
-          {[...Array(6)].map((_, i) => (
-            <motion.div
-              key={i}
-              className="absolute w-20 h-20 bg-gradient-to-br from-blue-400/20 to-purple-400/20 rounded-full"
-              style={{
-                left: `${Math.random() * 100}%`,
-                top: `${Math.random() * 100}%`,
-              }}
-              animate={{
-                y: [-20, 20, -20],
-                x: [-10, 10, -10],
-                rotate: [0, 360],
-              }}
-              transition={{
-                duration: 6 + i,
-                repeat: Infinity,
-                ease: "easeInOut",
-              }}
-            />
-          ))}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          {/* Reduced to 5 large orbs for better performance */}
+          {[...Array(5)].map((_, i) => {
+            const size = [80, 120, 100, 140, 110][i];
+            const duration = [18, 22, 20, 24, 19][i];
+            const delay = i * 0.8;
+            const startX = [15, 75, 35, 85, 50][i];
+            const startY = [25, 75, 50, 35, 80][i];
+            
+            return (
+              <motion.div
+                key={i}
+                className="absolute rounded-full will-change-transform"
+                style={{
+                  width: size,
+                  height: size,
+                  left: `${startX}%`,
+                  top: `${startY}%`,
+                  background: i % 2 === 0 
+                    ? 'linear-gradient(135deg, rgba(59, 130, 246, 0.12), rgba(147, 51, 234, 0.12))'
+                    : 'linear-gradient(135deg, rgba(147, 51, 234, 0.1), rgba(236, 72, 153, 0.1))',
+                  filter: 'blur(50px)',
+                }}
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{
+                  opacity: [0, 0.7, 0.5, 0.7, 0],
+                  scale: [0.9, 1.1, 1, 1.05, 0.95],
+                  x: [0, Math.sin(i) * 60, 0],
+                  y: [0, Math.cos(i) * 60, 0],
+                }}
+                transition={{
+                  duration: duration,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                  delay: delay,
+                }}
+              />
+            );
+          })}
         </div>
       )}
 
@@ -115,7 +119,7 @@ export function HeroSection() {
               <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-4">
                 <span className="inline-block min-h-[1.2em]">
                   {typewriterText}
-                  <span className={`${showCursor ? 'opacity-100' : 'opacity-0'} transition-opacity`}>
+                  <span className={`${showCursor ? 'opacity-100' : 'opacity-0'} transition-opacity duration-200`}>
                     |
                   </span>
                 </span>
@@ -123,7 +127,7 @@ export function HeroSection() {
               <motion.h2
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 3.5, duration: 0.8 }}
+                transition={{ delay: 3.5, duration: 0.8, ease: "easeOut" }}
                 className="text-4xl lg:text-6xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent"
               >
                 {t('subtitle')}
@@ -133,7 +137,7 @@ export function HeroSection() {
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 4, duration: 0.8 }}
+              transition={{ delay: 4, duration: 0.8, ease: "easeOut" }}
               className="text-xl lg:text-2xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed"
             >
               {t('description')}
@@ -201,12 +205,16 @@ export function HeroSection() {
             className="relative"
           >
             <div className="relative w-full max-w-lg mx-auto">
-              {/* Main Image */}
-              <div className="relative z-10">
-                <img
+              {/* Main Image - Optimized with Next.js Image */}
+              <div className="relative z-10 aspect-[4/3]">
+                <Image
                   src="https://images.pexels.com/photos/1658967/pexels-photo-1658967.jpeg"
                   alt="Travel Adventure"
-                  className="w-full h-auto rounded-3xl shadow-2xl"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="rounded-3xl shadow-2xl object-cover"
+                  priority
+                  quality={85}
                 />
                 
                 {/* Floating Cards */}
@@ -230,7 +238,7 @@ export function HeroSection() {
               </div>
 
               {/* Background Decorations */}
-              <div className="absolute -inset-6 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-3xl blur-xl"></div>
+              <div className="absolute -inset-6 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-3xl blur-xl -z-10"></div>
             </div>
           </motion.div>
         </div>
