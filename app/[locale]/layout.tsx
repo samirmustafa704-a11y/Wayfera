@@ -1,6 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Oswald } from 'next/font/google';
+import { Oswald, Noto_Kufi_Arabic } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { ThemeProvider } from '@/components/providers';
@@ -14,6 +14,14 @@ const oswald = Oswald({
   display: 'swap',
   preload: true,
   variable: '--font-oswald',
+});
+
+const notoKufiArabic = Noto_Kufi_Arabic({
+  subsets: ['arabic'],
+  weight: ['200', '300', '400', '500', '600', '700', '800', '900'],
+  display: 'swap',
+  preload: true,
+  variable: '--font-noto-kufi-arabic',
 });
 
 export const metadata: Metadata = {
@@ -89,7 +97,7 @@ export default async function RootLayout({
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#2563eb" />
       </head>
-      <body className={oswald.className} suppressHydrationWarning>
+      <body className={`${oswald.variable} ${notoKufiArabic.variable} ${locale === 'ar' ? 'font-arabic' : 'font-sans'}`} suppressHydrationWarning>
         <PerformanceOptimizer />
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider

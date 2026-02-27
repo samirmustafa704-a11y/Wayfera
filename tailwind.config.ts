@@ -11,7 +11,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Oswald', 'sans-serif'],
+        sans: ['var(--font-oswald)', 'Oswald', 'sans-serif'],
+        arabic: ['var(--font-noto-kufi-arabic)', 'Noto Kufi Arabic', 'sans-serif'],
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -162,7 +163,10 @@ const config: Config = {
         'body': {
           backgroundColor: 'hsl(var(--background))',
           color: 'hsl(var(--foreground))',
-          fontFamily: "'Oswald', sans-serif",
+          fontFamily: 'var(--font-oswald), Oswald, sans-serif',
+        },
+        'body.font-arabic': {
+          fontFamily: 'var(--font-noto-kufi-arabic), Noto Kufi Arabic, sans-serif',
         },
         '[dir="rtl"]': {
           direction: 'rtl',
