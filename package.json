@@ -2,6 +2,7 @@
   "name": "nextjs",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "prisma generate && next build",
@@ -80,6 +81,7 @@
     "zod": "^4.0.10"
   },
   "devDependencies": {
+    "dotenv": "^17.4.2",
     "prisma": "^5.20.0"
   }
 }
