@@ -1,3 +1,12 @@
 {
-  "/[locale]/page": "app/[locale]/page.js"
+  "/api/features/route": "app/api/features/route.js",
+  "/api/destinations/featured/route": "app/api/destinations/featured/route.js",
+  "/api/social-links/route": "app/api/social-links/route.js",
+  "/api/testimonials/route": "app/api/testimonials/route.js",
+  "/api/contact-info/route": "app/api/contact-info/route.js",
+  "/api/regions/route": "app/api/regions/route.js",
+  "/api/destinations/route": "app/api/destinations/route.js",
+  "/api/travel-tips/route": "app/api/travel-tips/route.js",
+  "/[locale]/page": "app/[locale]/page.js",
+  "/[locale]/destinations/page": "app/[locale]/destinations/page.js"
 }
