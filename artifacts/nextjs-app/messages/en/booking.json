@@ -1,0 +1,17 @@
+{
+  "title": "Book Your Dream Trip",
+  "steps": {
+    "destination": "Destination",
+    "details": "Details", 
+    "payment": "Payment"
+  },
+  "form": {
+    "destination": "Where would you like to go?",
+    "checkin": "Check-in Date",
+    "checkout": "Check-out Date",
+    "guests": "Guests",
+    "adults": "Adults",
+    "children": "Children",
+    "submit": "Book Now"
+  }
+}

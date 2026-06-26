@@ -1,0 +1,20 @@
+{
+  "title": "Our Services",
+  "subtitle": "Everything you need for the perfect trip",
+  "flight": {
+    "title": "Flight Booking",
+    "description": "Find the best flights at unbeatable prices"
+  },
+  "hotel": {
+    "title": "Hotel Reservations", 
+    "description": "Luxury accommodations worldwide"
+  },
+  "guide": {
+    "title": "Tour Guides",
+    "description": "Expert local guides for authentic experiences"
+  },
+  "support": {
+    "title": "24/7 Support",
+    "description": "Round-the-clock assistance for your journey"
+  }
+}

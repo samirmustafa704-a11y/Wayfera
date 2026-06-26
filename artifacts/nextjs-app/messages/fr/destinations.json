@@ -1,0 +1,11 @@
+{
+  "title": "Destinations Populaires",
+  "subtitle": "Explorez les plus beaux endroits du monde",
+  "filters": {
+    "all": "Tout",
+    "beach": "Plage", 
+    "mountain": "Montagne",
+    "city": "Ville",
+    "adventure": "Aventure"
+  }
+}

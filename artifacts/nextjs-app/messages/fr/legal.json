@@ -1,0 +1,107 @@
+{
+  "cookies": {
+    "title": "Politique en matière de cookies",
+    "lastUpdated": "Dernière mise à jour :",
+    "sections": {
+      "what": {
+        "title": "1. Qu'est-ce que les cookies ?",
+        "content": "Les cookies sont de petits fichiers texte placés sur votre ordinateur ou votre appareil mobile lorsque vous visitez un site Web. Ils sont largement utilisés pour rendre les sites Web plus efficaces et fournir des informations aux propriétaires de sites Web."
+      },
+      "how": {
+        "title": "2. Comment nous utilisons les cookies",
+        "intro": "Wayfera utilise des cookies pour :",
+        "items": [
+          "Mémoriser vos préférences et paramètres",
+          "Vous maintenir connecté à votre compte",
+          "Comprendre comment vous utilisez notre site Web",
+          "Améliorer nos services et l'expérience utilisateur",
+          "Fournir du contenu et des recommandations personnalisés",
+          "Analyser le trafic et les performances du site Web"
+        ]
+      },
+      "types": {
+        "title": "3. Types de cookies que nous utilisons",
+        "essential": {
+          "title": "Cookies essentiels",
+          "description": "Ces cookies sont nécessaires au fonctionnement correct du site Web. Ils activent les fonctions de base telles que la navigation entre les pages, l'accès aux zones sécurisées et les processus de réservation.",
+          "duration": "Session ou jusqu'à 1 an"
+        },
+        "performance": {
+          "title": "Cookies de performance",
+          "description": "Ces cookies collectent des informations sur la façon dont les visiteurs utilisent notre site Web, tels que les pages les plus fréquemment consultées. Cela nous aide à améliorer les performances de notre site Web.",
+          "duration": "Jusqu'à 2 ans"
+        },
+        "functionality": {
+          "title": "Cookies de fonctionnalité",
+          "description": "Ces cookies permettent au site Web de mémoriser les choix que vous faites (tels que la préférence de langue, la devise ou la région) et de fournir des fonctionnalités améliorées et personnalisées.",
+          "duration": "Jusqu'à 1 an"
+        },
+        "targeting": {
+          "title": "Cookies de ciblage/publicité",
+          "description": "Ces cookies sont utilisés pour vous diffuser des publicités plus pertinentes et adaptées à vos intérêts. Ils aident également à mesurer l'efficacité des campagnes publicitaires.",
+          "duration": "Jusqu'à 2 ans"
+        }
+      },
+      "third_party": {
+        "title": "4. Cookies de tiers",
+        "intro": "Nous pouvons utiliser des services tiers qui définissent également des cookies sur votre appareil. Ceux-ci comprennent :",
+        "items": [
+          "Google Analytics : pour analyser le trafic et le comportement des utilisateurs du site Web",
+          "Plates-formes de médias sociaux : pour activer les fonctionnalités de partage social",
+          "Processeurs de paiement : pour faciliter les transactions sécurisées",
+          "Réseaux publicitaires : pour afficher des publicités pertinentes"
+        ]
+      },
+      "managing": {
+        "title": "5. Gestion des cookies",
+        "intro": "Vous avez le droit de décider si vous acceptez ou refusez les cookies. Vous pouvez exercer vos préférences en matière de cookies en :",
+        "items": [
+          "Utilisant notre banneau de consentement aux cookies lors de votre première visite sur notre site Web",
+          "Ajustant les paramètres de votre navigateur pour refuser les cookies",
+          "Supprimant les cookies qui ont déjà été définis"
+        ],
+        "note": "Veuillez noter que si vous choisissez de bloquer ou de supprimer des cookies, certaines fonctionnalités de notre site Web peuvent ne pas fonctionner correctement."
+      },
+      "browser": {
+        "title": "6. Instructions spécifiques au navigateur",
+        "intro": "Pour gérer les cookies dans votre navigateur :",
+        "items": [
+          "Chrome : Paramètres → Confidentialité et sécurité → Cookies et données de site",
+          "Firefox : Options → Confidentialité et sécurité → Cookies et données de site",
+          "Safari : Préférences → Confidentialité → Gérer les données du site Web",
+          "Edge : Paramètres → Cookies et autorisations du site → Cookies et données du site"
+        ]
+      },
+      "storage": {
+        "title": "7. Stockage local et stockage de session",
+        "intro": "En plus des cookies, nous utilisons les technologies de stockage du navigateur (localStorage et sessionStorage) pour :",
+        "items": [
+          "Stocker les préférences et les paramètres de l'utilisateur",
+          "Mettre en cache les données pour améliorer les performances",
+          "Maintenir les informations de session",
+          "Vous rappeler vos destinations préférées"
+        ]
+      },
+      "dnt": {
+        "title": "8. Signaux de non-suivi",
+        "content": "Certains navigateurs incluent une fonctionnalité \"Ne pas me suivre\" (DNT) qui signale aux sites Web que vous ne souhaitez pas que votre activité en ligne soit suivie. Nous ne répondons actuellement pas aux signaux DNT, mais nous respectons vos choix en matière de confidentialité et vous proposons des options de gestion des cookies."
+      },
+      "updates": {
+        "title": "9. Mises à jour de cette politique",
+        "content": "Nous pouvons mettre à jour cette politique en matière de cookies de temps à autre pour refléter les changements technologiques, législatifs ou nos pratiques commerciales. Nous vous informerons de tout changement important en publiant la politique mise à jour sur notre site Web."
+      },
+      "contact": {
+        "title": "10. Nous contacter",
+        "intro": "Si vous avez des questions sur notre utilisation des cookies, veuillez nous contacter :"
+      }
+    }
+  },
+  "privacy": {
+    "title": "Politique de confidentialité",
+    "lastUpdated": "Dernière mise à jour :"
+  },
+  "terms": {
+    "title": "Conditions de service",
+    "lastUpdated": "Dernière mise à jour :"
+  }
+}

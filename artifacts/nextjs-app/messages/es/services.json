@@ -1,0 +1,20 @@
+{
+  "title": "Nuestros Servicios",
+  "subtitle": "Todo lo que necesitas para el viaje perfecto",
+  "flight": {
+    "title": "Reserva de Vuelos",
+    "description": "Encuentra los mejores vuelos a precios inmejorables"
+  },
+  "hotel": {
+    "title": "Reservas de Hoteles",
+    "description": "Alojamientos de lujo en todo el mundo"
+  },
+  "guide": {
+    "title": "Guías Turísticos",
+    "description": "Guías locales expertos para experiencias auténticas"
+  },
+  "support": {
+    "title": "Soporte 24/7",
+    "description": "Asistencia las 24 horas para tu viaje"
+  }
+}

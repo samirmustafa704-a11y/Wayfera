@@ -1,0 +1,26 @@
+// Re-export from config folder for backward compatibility
+// Note: Import directly from config/ folder in new code
+export {
+  siteConfig,
+  mainNav,
+  footerNav,
+  API_ENDPOINTS,
+  ITEMS_PER_PAGE,
+  MAX_ITEMS_PER_PAGE,
+  IMAGE_SIZES,
+  ANIMATION_DURATION,
+  BREAKPOINTS,
+  DESTINATION_CATEGORIES,
+  SERVICE_TYPES,
+  DATE_FORMATS,
+  SEO_DEFAULTS,
+  CACHE_DURATION,
+  ERROR_MESSAGES,
+  SUCCESS_MESSAGES,
+  LOCALES,
+  DEFAULT_LOCALE,
+  APP_NAME,
+  APP_DESCRIPTION,
+  SOCIAL_LINKS,
+  CONTACT_INFO,
+} from '@/app/_config'

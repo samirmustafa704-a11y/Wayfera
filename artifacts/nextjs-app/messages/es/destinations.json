@@ -1,0 +1,11 @@
+{
+  "title": "Destinos Populares",
+  "subtitle": "Explora los lugares más increíbles del mundo",
+  "filters": {
+    "all": "Todos",
+    "beach": "Playa",
+    "mountain": "Montaña",
+    "city": "Ciudad",
+    "adventure": "Aventura"
+  }
+}

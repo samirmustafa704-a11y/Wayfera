@@ -1,0 +1,107 @@
+{
+  "cookies": {
+    "title": "Política de cookies",
+    "lastUpdated": "Última actualización:",
+    "sections": {
+      "what": {
+        "title": "1. ¿Qué son las cookies?",
+        "content": "Las cookies son pequeños archivos de texto que se colocan en tu computadora o dispositivo móvil cuando visitas un sitio web. Se utilizan ampliamente para que los sitios web funcionen de manera más eficiente y proporcionar información a los propietarios de sitios web."
+      },
+      "how": {
+        "title": "2. Cómo utilizamos las cookies",
+        "intro": "Wayfera utiliza cookies para:",
+        "items": [
+          "Recordar tus preferencias y configuración",
+          "Mantenerte conectado a tu cuenta",
+          "Entender cómo usas nuestro sitio web",
+          "Mejorar nuestros servicios y la experiencia del usuario",
+          "Proporcionar contenido y recomendaciones personalizados",
+          "Analizar el tráfico y el rendimiento del sitio web"
+        ]
+      },
+      "types": {
+        "title": "3. Tipos de cookies que utilizamos",
+        "essential": {
+          "title": "Cookies esenciales",
+          "description": "Estas cookies son necesarias para que el sitio web funcione correctamente. Habilitan funciones básicas como la navegación de páginas, el acceso a áreas seguras y los procesos de reserva.",
+          "duration": "Sesión o hasta 1 año"
+        },
+        "performance": {
+          "title": "Cookies de rendimiento",
+          "description": "Estas cookies recopilan información sobre cómo los visitantes utilizan nuestro sitio web, como qué páginas se visitan con más frecuencia. Esto nos ayuda a mejorar el rendimiento de nuestro sitio web.",
+          "duration": "Hasta 2 años"
+        },
+        "functionality": {
+          "title": "Cookies de funcionalidad",
+          "description": "Estas cookies permiten que el sitio web recuerde las opciones que eliges (como preferencia de idioma, moneda o región) y proporcionen características mejoradas y personalizadas.",
+          "duration": "Hasta 1 año"
+        },
+        "targeting": {
+          "title": "Cookies de segmentación/publicidad",
+          "description": "Estas cookies se utilizan para ofrecerte anuncios más relevantes y adaptados a tus intereses. También ayudan a medir la efectividad de las campañas publicitarias.",
+          "duration": "Hasta 2 años"
+        }
+      },
+      "third_party": {
+        "title": "4. Cookies de terceros",
+        "intro": "Podemos utilizar servicios de terceros que también establecen cookies en tu dispositivo. Estos incluyen:",
+        "items": [
+          "Google Analytics: para analizar el tráfico del sitio web y el comportamiento del usuario",
+          "Plataformas de redes sociales: para habilitar funciones de compartición social",
+          "Procesadores de pago: para facilitar transacciones seguras",
+          "Redes publicitarias: para mostrar anuncios relevantes"
+        ]
+      },
+      "managing": {
+        "title": "5. Gestión de cookies",
+        "intro": "Tienes derecho a decidir si aceptas o rechazas las cookies. Puedes ejercer tus preferencias de cookies mediante:",
+        "items": [
+          "Utilizar nuestro banner de consentimiento de cookies cuando visites nuestro sitio web por primera vez",
+          "Ajustar la configuración de tu navegador para rechazar cookies",
+          "Eliminar las cookies que ya se han establecido"
+        ],
+        "note": "Tenga en cuenta que si elige bloquear o eliminar cookies, es posible que algunas funciones de nuestro sitio web no funcionen correctamente."
+      },
+      "browser": {
+        "title": "6. Instrucciones específicas del navegador",
+        "intro": "Para administrar cookies en tu navegador:",
+        "items": [
+          "Chrome: Configuración → Privacidad y seguridad → Cookies y datos de sitios",
+          "Firefox: Opciones → Privacidad y seguridad → Cookies y datos de sitios",
+          "Safari: Preferencias → Privacidad → Administrar datos del sitio web",
+          "Edge: Configuración → Cookies y permisos del sitio → Cookies y datos del sitio"
+        ]
+      },
+      "storage": {
+        "title": "7. Almacenamiento local y almacenamiento de sesión",
+        "intro": "Además de las cookies, utilizamos tecnologías de almacenamiento del navegador (localStorage y sessionStorage) para:",
+        "items": [
+          "Almacenar preferencias y configuración del usuario",
+          "Almacenar datos en caché para mejorar el rendimiento",
+          "Mantener información de sesión",
+          "Recordar tus destinos favoritos"
+        ]
+      },
+      "dnt": {
+        "title": "8. Señales de No rastrear",
+        "content": "Algunos navegadores incluyen una característica \"No rastrear\" (DNT) que indica a los sitios web que no deseas que se rastree tu actividad en línea. Actualmente no respondemos a las señales DNT, pero respetamos tus opciones de privacidad y proporcionamos opciones de administración de cookies."
+      },
+      "updates": {
+        "title": "9. Actualizaciones de esta política",
+        "content": "Podemos actualizar esta Política de cookies de vez en cuando para reflejar cambios en la tecnología, la legislación o nuestras prácticas comerciales. Te notificaremos sobre cambios significativos publicando la política actualizada en nuestro sitio web."
+      },
+      "contact": {
+        "title": "10. Contáctanos",
+        "intro": "Si tienes preguntas sobre nuestro uso de cookies, contáctanos:"
+      }
+    }
+  },
+  "privacy": {
+    "title": "Política de privacidad",
+    "lastUpdated": "Última actualización:"
+  },
+  "terms": {
+    "title": "Términos de servicio",
+    "lastUpdated": "Última actualización:"
+  }
+}

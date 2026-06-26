@@ -1,0 +1,276 @@
+{
+  "cookies": {
+    "title": "Cookie Policy",
+    "lastUpdated": "Last updated:",
+    "sections": {
+      "what": {
+        "title": "1. What Are Cookies?",
+        "content": "Cookies are small text files that are placed on your computer or mobile device when you visit a website. They are widely used to make websites work more efficiently and provide information to website owners."
+      },
+      "how": {
+        "title": "2. How We Use Cookies",
+        "intro": "Wayfera uses cookies to:",
+        "items": [
+          "Remember your preferences and settings",
+          "Keep you signed in to your account",
+          "Understand how you use our website",
+          "Improve our services and user experience",
+          "Provide personalized content and recommendations",
+          "Analyze website traffic and performance"
+        ]
+      },
+      "types": {
+        "title": "3. Types of Cookies We Use",
+        "essential": {
+          "title": "Essential Cookies",
+          "description": "These cookies are necessary for the website to function properly. They enable basic functions like page navigation, access to secure areas, and booking processes.",
+          "duration": "Session or up to 1 year"
+        },
+        "performance": {
+          "title": "Performance Cookies",
+          "description": "These cookies collect information about how visitors use our website, such as which pages are visited most often. This helps us improve our website's performance.",
+          "duration": "Up to 2 years"
+        },
+        "functionality": {
+          "title": "Functionality Cookies",
+          "description": "These cookies allow the website to remember choices you make (such as language preference, currency, or region) and provide enhanced, personalized features.",
+          "duration": "Up to 1 year"
+        },
+        "targeting": {
+          "title": "Targeting/Advertising Cookies",
+          "description": "These cookies are used to deliver advertisements more relevant to you and your interests. They also help measure the effectiveness of advertising campaigns.",
+          "duration": "Up to 2 years"
+        }
+      },
+      "third_party": {
+        "title": "4. Third-Party Cookies",
+        "intro": "We may use third-party services that also set cookies on your device. These include:",
+        "items": [
+          "Google Analytics: To analyze website traffic and user behavior",
+          "Social Media Platforms: To enable social sharing features",
+          "Payment Processors: To facilitate secure transactions",
+          "Advertising Networks: To display relevant advertisements"
+        ]
+      },
+      "managing": {
+        "title": "5. Managing Cookies",
+        "intro": "You have the right to decide whether to accept or reject cookies. You can exercise your cookie preferences by:",
+        "items": [
+          "Using our cookie consent banner when you first visit our website",
+          "Adjusting your browser settings to refuse cookies",
+          "Deleting cookies that have already been set"
+        ],
+        "note": "Please note that if you choose to block or delete cookies, some features of our website may not function properly."
+      },
+      "browser": {
+        "title": "6. Browser-Specific Instructions",
+        "intro": "To manage cookies in your browser:",
+        "items": [
+          "Chrome: Settings → Privacy and security → Cookies and other site data",
+          "Firefox: Options → Privacy & Security → Cookies and Site Data",
+          "Safari: Preferences → Privacy → Manage Website Data",
+          "Edge: Settings → Cookies and site permissions → Cookies and site data"
+        ]
+      },
+      "storage": {
+        "title": "7. Local Storage and Session Storage",
+        "intro": "In addition to cookies, we use browser storage technologies (localStorage and sessionStorage) to:",
+        "items": [
+          "Store user preferences and settings",
+          "Cache data for improved performance",
+          "Maintain session information",
+          "Remember your favorite destinations"
+        ]
+      },
+      "dnt": {
+        "title": "8. Do Not Track Signals",
+        "content": "Some browsers include a \"Do Not Track\" (DNT) feature that signals to websites that you do not want to have your online activity tracked. We currently do not respond to DNT signals, but we respect your privacy choices and provide cookie management options."
+      },
+      "updates": {
+        "title": "9. Updates to This Policy",
+        "content": "We may update this Cookie Policy from time to time to reflect changes in technology, legislation, or our business practices. We will notify you of any significant changes by posting the updated policy on our website."
+      },
+      "contact": {
+        "title": "10. Contact Us",
+        "intro": "If you have questions about our use of cookies, please contact us:"
+      }
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated:",
+    "sections": {
+      "intro": {
+        "title": "1. Introduction",
+        "content": "Welcome to Wayfera. We are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website."
+      },
+      "collect": {
+        "title": "2. Information We Collect",
+        "intro": "We collect information that you provide directly to us, including:",
+        "items": [
+          "Name and contact information (email address, phone number)",
+          "Travel preferences and booking information",
+          "Payment information (processed securely through third-party payment processors)",
+          "Communication preferences",
+          "Feedback and correspondence"
+        ]
+      },
+      "use": {
+        "title": "3. How We Use Your Information",
+        "intro": "We use the information we collect to:",
+        "items": [
+          "Process your travel bookings and reservations",
+          "Communicate with you about your bookings",
+          "Send you marketing communications (with your consent)",
+          "Improve our services and website",
+          "Comply with legal obligations",
+          "Prevent fraud and enhance security"
+        ]
+      },
+      "cookies": {
+        "title": "4. Cookies and Tracking Technologies",
+        "content": "We use cookies and similar tracking technologies to track activity on our website and store certain information. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our website."
+      },
+      "sharing": {
+        "title": "5. Data Sharing and Disclosure",
+        "intro": "We may share your information with:",
+        "items": [
+          "Service providers who assist in our operations",
+          "Travel partners (hotels, airlines, tour operators)",
+          "Payment processors",
+          "Legal authorities when required by law"
+        ],
+        "note": "We do not sell your personal information to third parties."
+      },
+      "security": {
+        "title": "6. Data Security",
+        "content": "We implement appropriate technical and organizational security measures to protect your personal information. However, no method of transmission over the Internet or electronic storage is 100% secure, and we cannot guarantee absolute security."
+      },
+      "rights": {
+        "title": "7. Your Rights",
+        "intro": "Depending on your location, you may have the following rights:",
+        "items": [
+          "Access your personal information",
+          "Correct inaccurate information",
+          "Request deletion of your information",
+          "Object to processing of your information",
+          "Request restriction of processing",
+          "Data portability",
+          "Withdraw consent"
+        ]
+      },
+      "children": {
+        "title": "8. Children's Privacy",
+        "content": "Our services are not directed to children under 13 years of age. We do not knowingly collect personal information from children under 13. If you become aware that a child has provided us with personal information, please contact us."
+      },
+      "international": {
+        "title": "9. International Data Transfers",
+        "content": "Your information may be transferred to and processed in countries other than your country of residence. These countries may have data protection laws that are different from the laws of your country."
+      },
+      "updates": {
+        "title": "10. Changes to This Privacy Policy",
+        "content": "We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the \"Last updated\" date."
+      },
+      "contact": {
+        "title": "11. Contact Us",
+        "intro": "If you have any questions about this Privacy Policy, please contact us:"
+      }
+    }
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "lastUpdated": "Last updated:",
+    "sections": {
+      "agreement": {
+        "title": "1. Agreement to Terms",
+        "content": "By accessing or using Wayfera's services, you agree to be bound by these Terms of Service and all applicable laws and regulations. If you do not agree with any of these terms, you are prohibited from using or accessing our services."
+      },
+      "license": {
+        "title": "2. Use License",
+        "intro": "Permission is granted to temporarily access the materials on Wayfera's website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:",
+        "items": [
+          "Modify or copy the materials",
+          "Use the materials for any commercial purpose",
+          "Attempt to decompile or reverse engineer any software",
+          "Remove any copyright or proprietary notations",
+          "Transfer the materials to another person"
+        ]
+      },
+      "booking": {
+        "title": "3. Booking and Reservations",
+        "intro": "When you make a booking through Wayfera:",
+        "items": [
+          "You must provide accurate and complete information",
+          "You are responsible for all charges incurred",
+          "Bookings are subject to availability and confirmation",
+          "Prices are subject to change until booking is confirmed",
+          "You must comply with all terms and conditions of service providers"
+        ]
+      },
+      "payment": {
+        "title": "4. Payment Terms",
+        "content": "Payment is required at the time of booking unless otherwise specified. We accept major credit cards and other payment methods as indicated on our website. All prices are in USD unless otherwise stated."
+      },
+      "cancellation": {
+        "title": "5. Cancellation and Refund Policy",
+        "intro": "Cancellation policies vary by service and provider:",
+        "items": [
+          "Free cancellation up to 48 hours before departure for most services",
+          "Cancellations within 48 hours may incur fees",
+          "No-shows are non-refundable",
+          "Refunds are processed within 7-14 business days",
+          "Some services may have different cancellation terms"
+        ]
+      },
+      "travel_docs": {
+        "title": "6. Travel Documents and Requirements",
+        "intro": "You are responsible for:",
+        "items": [
+          "Obtaining valid passports and visas",
+          "Meeting health and vaccination requirements",
+          "Complying with customs and immigration regulations",
+          "Obtaining appropriate travel insurance"
+        ]
+      },
+      "liability": {
+        "title": "7. Limitation of Liability",
+        "intro": "Wayfera acts as an intermediary between you and service providers. We are not liable for:",
+        "items": [
+          "Acts or omissions of third-party service providers",
+          "Delays, cancellations, or changes by service providers",
+          "Personal injury, property damage, or loss",
+          "Force majeure events (natural disasters, political unrest, etc.)",
+          "Indirect, incidental, or consequential damages"
+        ]
+      },
+      "conduct": {
+        "title": "8. User Conduct",
+        "intro": "You agree not to:",
+        "items": [
+          "Use our services for any illegal purpose",
+          "Violate any laws or regulations",
+          "Infringe on intellectual property rights",
+          "Transmit harmful code or malware",
+          "Harass or harm other users",
+          "Impersonate any person or entity"
+        ]
+      },
+      "ip": {
+        "title": "9. Intellectual Property",
+        "content": "All content on this website, including text, graphics, logos, images, and software, is the property of Wayfera or its content suppliers and is protected by international copyright laws."
+      },
+      "dispute": {
+        "title": "10. Dispute Resolution",
+        "content": "Any disputes arising from these terms shall be resolved through binding arbitration in accordance with the rules of the American Arbitration Association. You waive your right to participate in class action lawsuits."
+      },
+      "changes": {
+        "title": "11. Changes to Terms",
+        "content": "We reserve the right to modify these terms at any time. Changes will be effective immediately upon posting. Your continued use of our services constitutes acceptance of the modified terms."
+      },
+      "contact": {
+        "title": "12. Contact Information",
+        "intro": "For questions about these Terms of Service, contact us:"
+      }
+    }
+  }
+}

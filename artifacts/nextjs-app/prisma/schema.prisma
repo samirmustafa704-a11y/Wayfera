@@ -1,0 +1,193 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// User model for travel bookings and accounts
+model User {
+  id           Int      @id @default(autoincrement())
+  email        String   @unique
+  name         String?
+  phone        String?
+  avatar       String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+  bookings     Booking[]
+  reviews      Review[]
+}
+
+// Destinations model
+model Destination {
+  id           Int      @id @default(autoincrement())
+  title        String
+  slug         String   @unique
+  description  String
+  category     String   // beach, mountain, city, adventure
+  image        String
+  imageGallery String[] // Array of gallery images
+  country      String
+  region       String
+  regionId     Int?
+  regionRel    Region?  @relation(fields: [regionId], references: [id], onDelete: SetNull)
+  latitude     Float?
+  longitude    Float?
+  price        Int      // Price in USD
+  duration     Int      // Duration in days
+  highlights   String[] // Array of highlights
+  bestTime     String   // Best time to visit
+  featured     Boolean  @default(false)
+  reviews      Review[]
+  bookings     Booking[]
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+// Travel Packages/Services
+model Package {
+  id           Int      @id @default(autoincrement())
+  title        String
+  description  String
+  type         String   // flight, hotel, guide, support
+  price        Int      // Price in USD
+  features     String[] // Array of features
+  rating       Float?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+// Bookings model
+model Booking {
+  id              Int      @id @default(autoincrement())
+  userId          Int
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  destinationId   Int
+  destination     Destination @relation(fields: [destinationId], references: [id], onDelete: Cascade)
+  status          String   @default("pending") // pending, confirmed, cancelled
+  checkInDate     DateTime
+  checkOutDate    DateTime
+  numberOfGuests  Int
+  totalPrice      Int
+  notes           String?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
+// Reviews model
+model Review {
+  id              Int      @id @default(autoincrement())
+  userId          Int
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  destinationId   Int
+  destination     Destination @relation(fields: [destinationId], references: [id], onDelete: Cascade)
+  rating          Int      // 1-5 rating
+  title           String
+  text            String
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
+// Testimonials model
+model Testimonial {
+  id           Int      @id @default(autoincrement())
+  name         String
+  location     String
+  image        String
+  rating       Int      // 1-5 rating
+  text         String
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+// Features model for "Why Choose Us" section
+model Feature {
+  id           Int      @id @default(autoincrement())
+  title        String
+  description  String
+  icon         String   // Icon name from lucide-react
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+// Regions model for geographic organization
+model Region {
+  id           Int      @id @default(autoincrement())
+  name         String   @unique
+  description  String
+  image        String
+  destinations Destination[]
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+// Pricing Plans model
+model PricingPlan {
+  id           Int      @id @default(autoincrement())
+  name         String   // Basic, Premium, VIP
+  price        Int      // Price in USD
+  description  String
+  features     String[] // Array of feature descriptions
+  popular      Boolean  @default(false)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+// Travel Tips model
+model TravelTip {
+  id           Int      @id @default(autoincrement())
+  title        String
+  description  String
+  icon         String   // Icon name from lucide-react
+  order        Int      @default(0)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+// Service Process Steps model
+model ProcessStep {
+  id           Int      @id @default(autoincrement())
+  title        String
+  description  String
+  icon         String   // Icon name from lucide-react
+  order        Int      @default(0)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+// Page Stats model (for about, home pages, etc.)
+model PageStat {
+  id           Int      @id @default(autoincrement())
+  pageType     String   // 'home', 'about', etc
+  label        String   // 'Countries', 'Clients', etc
+  value        String   // '50+', '1000+', etc
+  icon         String?  // Optional icon name
+  order        Int      @default(0)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+// Social Links model
+model SocialLink {
+  id           Int      @id @default(autoincrement())
+  name         String   @unique // facebook, twitter, instagram, youtube
+  url          String
+  icon         String   // Icon name from lucide-react
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+// Contact Information (single settings record)
+model ContactInfo {
+  id           Int      @id @default(autoincrement())
+  email        String
+  phone        String
+  address      String
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}

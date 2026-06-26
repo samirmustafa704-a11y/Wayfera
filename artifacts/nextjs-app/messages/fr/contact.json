@@ -1,0 +1,26 @@
+{
+  "title": "Contactez-Nous",
+  "subtitle": "Vous avez des questions ? Nous aimerions avoir de vos nouvelles. Envoyez-nous un message et nous vous répondrons dès que possible.",
+  "info": {
+    "title": "Informations de Contact",
+    "description": "Remplissez le formulaire et notre équipe vous contactera dans les 24 heures.",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "address": "Adresse"
+  },
+  "form": {
+    "name": "Nom Complet",
+    "namePlaceholder": "Jean Dupont",
+    "email": "Adresse E-mail",
+    "emailPlaceholder": "jean@example.com",
+    "phone": "Numéro de Téléphone",
+    "phonePlaceholder": "+33 6 12 34 56 78",
+    "subject": "Sujet",
+    "subjectPlaceholder": "Comment pouvons-nous vous aider ?",
+    "message": "Message",
+    "messagePlaceholder": "Parlez-nous de votre demande...",
+    "submit": "Envoyer le Message",
+    "sending": "Envoi en cours...",
+    "success": "Message envoyé avec succès ! Nous vous répondrons bientôt."
+  }
+}

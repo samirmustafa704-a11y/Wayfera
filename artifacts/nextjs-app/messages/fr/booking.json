@@ -1,0 +1,17 @@
+{
+  "title": "Réservez le Voyage de Vos Rêves",
+  "steps": {
+    "destination": "Destination",
+    "details": "Détails",
+    "payment": "Paiement" 
+  },
+  "form": {
+    "destination": "Où souhaitez-vous aller ?",
+    "checkin": "Date d'arrivée",
+    "checkout": "Date de départ",
+    "guests": "Invités", 
+    "adults": "Adultes",
+    "children": "Enfants",
+    "submit": "Réserver Maintenant"
+  }
+}

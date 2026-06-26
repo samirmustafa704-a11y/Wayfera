@@ -1,0 +1,11 @@
+{
+  "title": "Popular Destinations",
+  "subtitle": "Explore the world's most incredible places",
+  "filters": {
+    "all": "All",
+    "beach": "Beach",
+    "mountain": "Mountain", 
+    "city": "City",
+    "adventure": "Adventure"
+  }
+}
