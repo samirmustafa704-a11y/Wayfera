@@ -7,15 +7,7 @@ import { Button } from '@/app/_components/ui/button';
 import Link from 'next/link';
 import { useLocale } from 'next-intl';
 import Image from 'next/image';
-
-interface Destination {
-  id: number;
-  title: string;
-  image: string;
-  price: number;
-  duration: number;
-  description: string;
-}
+import { Destination } from '@/app/_types';
 
 export function FeaturedDestinations() {
   const locale = useLocale();

@@ -6,18 +6,7 @@ import { motion } from 'framer-motion';
 import { Plane, Mail, Phone, MapPin } from 'lucide-react';
 import * as Icons from 'lucide-react';
 import Link from 'next/link';
-
-interface ContactInfo {
-  email: string;
-  phone: string;
-  address: string;
-}
-
-interface SocialLink {
-  name: string;
-  url: string;
-  icon: string;
-}
+import { ContactInfo, SocialLink } from '@/app/_types';
 
 const quickLinks = [
   { key: 'home', href: '#hero' },

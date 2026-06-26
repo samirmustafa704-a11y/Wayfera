@@ -3,14 +3,7 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import * as Icons from 'lucide-react';
-
-interface ProcessStep {
-  id: number;
-  icon: string;
-  title: string;
-  description: string;
-  order: number;
-}
+import { ProcessStep } from '@/app/_types';
 
 export function ServiceProcess() {
   const [steps, setSteps] = useState<ProcessStep[]>([]);

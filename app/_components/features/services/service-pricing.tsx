@@ -6,15 +6,7 @@ import { Check, Star, Loader } from 'lucide-react';
 import { Button } from '@/app/_components/ui/button';
 import Link from 'next/link';
 import { useLocale } from 'next-intl';
-
-interface PricingPlan {
-  id: number;
-  name: string;
-  price: number;
-  description: string;
-  features: string[];
-  popular: boolean;
-}
+import { PricingPlan } from '@/app/_types';
 
 export function ServicePricing() {
   const locale = useLocale();

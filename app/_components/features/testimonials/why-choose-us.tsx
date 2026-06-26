@@ -3,13 +3,7 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Shield, Award, Headphones, DollarSign, Globe, Heart, Loader } from 'lucide-react';
-
-interface Feature {
-  id: number;
-  title: string;
-  description: string;
-  icon: string;
-}
+import { Feature } from '@/app/_types';
 
 const iconMap: Record<string, React.ComponentType<any>> = {
   Shield,

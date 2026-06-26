@@ -24,15 +24,7 @@ import {
   Loader
 } from 'lucide-react';
 import Image from 'next/image';
-
-interface Testimonial {
-  id: number;
-  name: string;
-  location: string;
-  rating: number;
-  text: string;
-  image: string;
-}
+import { Testimonial } from '@/app/_types';
 
 const services = [
   {
