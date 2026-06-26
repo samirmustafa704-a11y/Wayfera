@@ -21,6 +21,19 @@ This directory contains GitHub-specific configuration files for the Wayfera proj
   - Links to related issues
   - Documents changes
 
+### Deployment
+- **DEPLOYMENT.md** - Netlify and other platform deployment configuration
+  - Build and publish settings
+  - Environment variables
+  - Caching strategy
+  - Security headers
+
+### Root Configuration
+- **netlify.toml** - Netlify deployment configuration (kept in root for auto-detection)
+  - Build configuration
+  - Redirects and headers
+  - Caching rules
+
 ## Workflows
 
 ### CI Workflow (ci.yml)
@@ -33,6 +46,13 @@ Actions:
 - Build project
 - Run tests
 - Type checking
+
+## Deployment
+
+See [DEPLOYMENT.md](./DEPLOYMENT.md) for:
+- Netlify deployment configuration
+- Platform-specific deployment steps
+- Security headers and caching strategy
 
 ## Contributing
 See [CONTRIBUTING.md](../CONTRIBUTING.md) for contribution guidelines

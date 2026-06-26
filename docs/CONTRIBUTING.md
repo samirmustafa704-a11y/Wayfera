@@ -7,7 +7,7 @@ We are committed to providing a welcoming and inclusive environment. All contrib
 ## Getting Started
 
 1. Fork the repository
-2. Clone your fork: `git clone https://github.com/yourusername/Wayfera.git`
+2. Clone your fork: `git clone https://github.com/freetwo7300-hash/Wayfera.git`
 3. Create a feature branch: `git checkout -b feature/amazing-feature`
 4. Install dependencies: `npm install`
 5. Start dev server: `npm run dev`
@@ -47,5 +47,8 @@ All developer docs are in `/docs` folder:
 - `SETUP.md` - Installation & setup
 - `DATABASE.md` - Database configuration
 - `ARCHITECTURE.md` - Project architecture
+- `ORGANIZATION.md` - Project structure
+- `SECURITY.md` - Security guidelines
 
-See [README.md](README.md) for project overview.
+See [README.md](../README.md) for project overview.
+

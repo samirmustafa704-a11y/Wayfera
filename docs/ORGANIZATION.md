@@ -102,7 +102,12 @@ docs/
 ├── INDEX.md            # Documentation index
 ├── ARCHITECTURE.md     # Project architecture
 ├── DATABASE.md         # Database schema
-└── SETUP.md            # Setup instructions
+├── SETUP.md            # Setup instructions
+├── ORGANIZATION.md     # Project structure (this file)
+├── CHANGELOG.md        # Version history
+├── CONTRIBUTING.md     # Contribution guidelines
+├── CODE_OF_CONDUCT.md  # Community code of conduct
+└── SECURITY.md         # Security policy
 ```
 
 ### `/.github` 🤖 CI/CD
@@ -110,6 +115,7 @@ docs/
 ```
 .github/
 ├── README.md           # GitHub config guide
+├── DEPLOYMENT.md       # Deployment configuration
 ├── workflows/
 │   └── ci.yml          # CI/CD pipeline
 ├── ISSUE_TEMPLATE/
@@ -129,7 +135,7 @@ types/
 
 ## 📋 Root Level Files
 
-### Configuration Files
+### Configuration Files (Required by Next.js)
 - **tsconfig.json** - TypeScript configuration
 - **next.config.js** - Next.js configuration
 - **tailwind.config.ts** - Tailwind CSS configuration
@@ -145,25 +151,21 @@ types/
 ### Linting & Formatting
 - **.eslintrc.json** - ESLint configuration
 - **.editorconfig** - Editor configuration
-- **.prettierrc** - Prettier configuration (if used)
 
 ### Git
 - **.gitignore** - Git ignore rules
 - **.gitattributes** - Git attributes
 
-### Documentation
-- **README.md** - Project overview
-- **CONTRIBUTING.md** - Contribution guidelines
-- **CODE_OF_CONDUCT.md** - Community code of conduct
-- **SECURITY.md** - Security policy
+### Core Project Files (Root Level)
+- **README.md** - Project overview and quick start
 - **LICENSE** - MIT License
-- **CHANGELOG.md** - Version history
+- **netlify.toml** - Netlify deployment configuration
 
 ### Package Management
 - **package.json** - Dependencies and scripts
 - **package-lock.json** - Locked versions
 
-### Build Artifacts (Ignored)
+### Build Artifacts (Gitignored)
 - **.next/** - Next.js build output
 - **node_modules/** - Dependencies
 
@@ -173,11 +175,13 @@ types/
 - All configuration in `/config` folder
 - All translations in `/messages` folder
 - All documentation in `/docs` folder
+- All GitHub config in `/.github` folder
 
 ### ✅ NO DUPLICATES
 - Configuration consolidation in `config/site.ts`
 - Navigation in single `config/navigation.ts`
 - No hardcoded data in components
+- No duplicate documentation
 
 ### ✅ CLEAN STRUCTURE
 - `/app` for pages and routes
@@ -185,6 +189,8 @@ types/
 - `/lib` for utilities
 - `/config` for configuration
 - `/messages` for i18n
+- `/docs` for all documentation
+- `/.github` for GitHub configuration
 
 ### ✅ BACKWARD COMPATIBILITY
 - `lib/constants.ts` re-exports from config
@@ -225,3 +231,4 @@ import Button from '../../../../components/ui/button'
 4. **Add types** to `/types`
 5. **Add API routes** to `/app/api` if needed
 6. **Update documentation** in `/docs`
+

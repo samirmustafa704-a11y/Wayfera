@@ -49,3 +49,4 @@ Subscribe to security advisories:
 - GitHub Security Alerts
 - npm Security Advisories
 - OWASP Top 10 updates
+

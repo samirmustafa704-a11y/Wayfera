@@ -141,7 +141,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Links
 
-- [Repository](https://github.com/yourusername/wayfera)
+- [Repository](https://github.com/freetwo7300-hash/Wayfera)
 - [Live Demo](https://wayfera.netlify.app)
-- [Issues](https://github.com/yourusername/wayfera/issues)
-- [Pull Requests](https://github.com/yourusername/wayfera/pulls)
+- [Issues](https://github.com/freetwo7300-hash/Wayfera/issues)
+- [Pull Requests](https://github.com/freetwo7300-hash/Wayfera/pulls)
+
